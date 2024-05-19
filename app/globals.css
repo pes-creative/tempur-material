@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.container-wrapper {
+  @apply w-full max-w-[500px] px-4 sm:px-0 md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl mx-auto;
+}
+
+@font-face {
+  font-family: 'sf-pro-display-medium';
+  src: url("./../public/font/SFPRODISPLAYMEDIUM.OTF");
+}
+
+.sfpro-medium {
+  font-family: 'sf-pro-display-medium';
+}
+
+.section {
+  @apply h-[500px] sm:h-[550px] md:h-[600px] lg:h-[800px] xl:h-screen max-h-screen
+}
+
+.section-header {
+  word-spacing: .4rem;
+  @apply text-white uppercase sfpro-medium text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] leading-none mx-auto
+}
+
+.bg-earth {
+  background:  url(../public/images/earth-2.png) no-repeat center center/contain;
+}
+
+.bg-video {
+  background-image: url('./../public/images/video-placeholder.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg-motion {
+  background:  url(../public/images/motion.png) no-repeat center center/contain;
+}
+
+
+.text-gradient {
+  background: -webkit-linear-gradient(0deg, #07038E, #9531CA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
